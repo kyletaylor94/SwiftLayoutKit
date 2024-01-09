@@ -4,15 +4,15 @@ import UIKit
 
 extension UIView {
     public func anchor(top: NSLayoutYAxisAnchor? = nil,
-                left: NSLayoutXAxisAnchor? = nil,
-                bottom: NSLayoutYAxisAnchor? = nil,
-                right: NSLayoutXAxisAnchor? = nil,
-                paddingTop: CGFloat = 0,
-                paddingLeft: CGFloat = 0,
-                paddingBottom: CGFloat = 0,
-                paddingRight: CGFloat = 0,
-                width: CGFloat? = nil,
-                height: CGFloat? = nil) {
+                       left: NSLayoutXAxisAnchor? = nil,
+                       bottom: NSLayoutYAxisAnchor? = nil,
+                       right: NSLayoutXAxisAnchor? = nil,
+                       paddingTop: CGFloat = 0,
+                       paddingLeft: CGFloat = 0,
+                       paddingBottom: CGFloat = 0,
+                       paddingRight: CGFloat = 0,
+                       width: CGFloat? = nil,
+                       height: CGFloat? = nil) {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -51,7 +51,7 @@ extension UIView {
     }
     
     public func centerY(inView view: UIView, leftAnchor: NSLayoutXAxisAnchor? = nil, rightAnchor: NSLayoutXAxisAnchor? = nil,
-                 paddingLeft: CGFloat = 0, paddingRight: CGFloat = 0, constant: CGFloat = 0) {
+                        paddingLeft: CGFloat = 0, paddingRight: CGFloat = 0, constant: CGFloat = 0) {
         
         translatesAutoresizingMaskIntoConstraints = false
         centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant).isActive = true
@@ -66,3 +66,4 @@ extension UIView {
         heightAnchor.constraint(equalToConstant: height).isActive = true
         widthAnchor.constraint(equalToConstant: width).isActive = true
     }
+}
